@@ -22,3 +22,7 @@ downloading anything. To use the real Freddie Mac Single-Family
 Loan-Level Dataset, register (free) on Freddie Mac's website and follow
 the instructions in the part's README; its terms do not allow
 redistribution.
+
+## Licence
+
+The code is released under the [MIT Licence](LICENSE).
