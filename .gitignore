@@ -1,0 +1,10 @@
+# Generated or downloaded data. The synthetic panel is rebuilt by
+# make_synthetic_freddie.py; Freddie Mac's files cannot be redistributed.
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
