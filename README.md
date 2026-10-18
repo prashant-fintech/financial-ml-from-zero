@@ -13,6 +13,7 @@ Each post that has code gets its own folder with a README, a
 |---|---|---|
 | 1 | [The vocabulary, the traps, and the metrics that matter](https://singhprashant.in/writing/financial-ml-01-vocabulary-traps-metrics) | [`part-01-metrics`](part-01-metrics) |
 | 2 | [Tensors, time-ordered batching, and why leakage hides in `.shift()`](https://singhprashant.in/writing/financial-ml-02-tensors-batching-leakage) | [`part-02-leakage`](part-02-leakage) |
+| 3 | [A probability-of-default baseline you can trust](https://singhprashant.in/writing/financial-ml-03-default-baseline) | [`part-03-baseline`](part-03-baseline) |
 
 ## Data
 

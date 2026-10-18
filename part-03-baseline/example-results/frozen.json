@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "train_rate": 0.029184746745585795,
+  "positive_weight": 33.26447296142578,
+  "delinquency_rates": {
+    "0": 0.025060883684838973,
+    "1": 0.3581020423644388,
+    "2": 0.6572822352727362
+  },
+  "preprocessing": {
+    "columns": [
+      "credit_score",
+      "orig_ltv",
+      "orig_dti",
+      "orig_rate",
+      "loan_age",
+      "upb_share_remaining",
+      "dq_status_now",
+      "dq_status_prev",
+      "months_late_last_12",
+      "worst_status_last_12"
+    ],
+    "medians": {
+      "credit_score": 726.0,
+      "orig_ltv": 74.0,
+      "orig_dti": 34.0,
+      "orig_rate": 6.285,
+      "loan_age": 10.0,
+      "upb_share_remaining": 0.9836232098765432,
+      "dq_status_now": 0.0,
+      "dq_status_prev": 0.0,
+      "months_late_last_12": 0.0,
+      "worst_status_last_12": 0.0
+    },
+    "means": {
+      "credit_score": 725.9185646583614,
+      "orig_ltv": 73.72861884860725,
+      "orig_dti": 34.034533783918896,
+      "orig_rate": 6.28113488572057,
+      "loan_age": 11.268951588714032,
+      "upb_share_remaining": 0.9819206080985963,
+      "dq_status_now": 0.012087824191645504,
+      "dq_status_prev": 0.008778419884420805,
+      "months_late_last_12": 0.049581075406426846,
+      "worst_status_last_12": 0.044641964446399646
+    },
+    "stds": {
+      "credit_score": 49.247062051059565,
+      "orig_ltv": 12.66699617270925,
+      "orig_dti": 8.860173911792387,
+      "orig_rate": 0.3655414973062627,
+      "loan_age": 8.331588768626084,
+      "upb_share_remaining": 0.012180839962576134,
+      "dq_status_now": 0.1319124711788619,
+      "dq_status_prev": 0.11454560207739269,
+      "months_late_last_12": 0.3030439941790398,
+      "worst_status_last_12": 0.26390319561353726
+    }
+  },
+  "windows": {
+    "train": [
+      "2005-06",
+      "2007-12"
+    ],
+    "valid": [
+      "2009-01",
+      "2009-12"
+    ],
+    "test": [
+      "2011-01",
+      "2011-12"
+    ]
+  },
+  "development_as_of": "2010-12",
+  "test_as_of": "2012-12",
+  "selection_rule": "Lowest validation log loss among unweighted and weighted_corrected",
+  "review_fraction_on_validation": 0.1,
+  "fit_diagnostics": {
+    "unweighted": {
+      "loss": 0.10958175943971282,
+      "max_abs_gradient": 2.4016021115002184e-08
+    },
+    "weighted": {
+      "loss": 1.0355100720726336,
+      "max_abs_gradient": 1.704007472217231e-07
+    }
+  },
+  "versions": {
+    "python": "3.12.6",
+    "numpy": "2.0.2",
+    "pandas": "2.3.2",
+    "torch": "2.14.1+cpu",
+    "sklearn": "1.6.0"
+  },
+  "development_splits": {
+    "train": {
+      "rows": 100018,
+      "loans": 6020,
+      "events": 2919,
+      "event_rate": 0.029184746745585795
+    },
+    "valid": {
+      "rows": 81869,
+      "loans": 8307,
+      "events": 4356,
+      "event_rate": 0.05320695257057006
+    }
+  },
+  "selected_name": "unweighted",
+  "selected_model": {
+    "weights": [
+      -0.9433348403132827,
+      0.48361354985050753,
+      0.13310907479994166,
+      -0.13566028382537032,
+      1.6101653352923848,
+      1.4809877509220106,
+      0.27412990750791705,
+      -0.007038618832196582,
+      -0.023274214764359934,
+      0.00803307248476703
+    ],
+    "bias": -4.078001168241936,
+    "logit_offset": 0.0
+  },
+  "thresholds": {
+    "constant": 1.0000000000000002,
+    "delinquency_only": 0.3581020423644388,
+    "unweighted": 0.07884516241666142
+  },
+  "code_sha256": "1e17d99e70f9f3a20656783ca843bd1892ea2a3d0d5c93bd337147ad67893022",
+  "data_sha256": "c8f8b0dd99f01079355345f5110c4af1f8e65c36016ea031a8f92813e73c201d"
+}
